@@ -1,1 +1,432 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    background: #f5f6f8;
+    color: #222;
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* HEADER */
+
+.header {
+    background: #101820;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    gap: 28px;
+}
+
+.nav a {
+    color: #ddd;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #27d17f;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(135deg, #101820, #173b30);
+    color: white;
+    padding: 80px 0;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    max-width: 700px;
+}
+
+.badge {
+    display: inline-block;
+    background: #27d17f;
+    color: #07150f;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 42px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #ddd;
+    font-size: 18px;
+}
+
+.hero-btn {
+    margin-top: 25px;
+    border: none;
+    background: #27d17f;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hero-ball {
+    font-size: 150px;
+    animation: rotateBall 5s linear infinite;
+}
+
+@keyframes rotateBall {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* SECTION */
+
+.section {
+    padding: 60px 0;
+}
+
+.gray {
+    background: #eceef1;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 28px;
+}
+
+.section-title span {
+    color: #777;
+}
+
+
+/* RESULTS */
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.result-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
+.league {
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.teams {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.team {
+    width: 35%;
+}
+
+.team-icon {
+    font-size: 40px;
+    display: block;
+}
+
+.score {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+/* NEWS */
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.news-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-image {
+    height: 160px;
+    background: linear-gradient(135deg, #1c2933, #27d17f);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+}
+
+.news-content {
+    padding: 20px;
+}
+
+.news-content h3 {
+    margin-bottom: 10px;
+}
+
+.news-content p {
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* MATCHES */
+
+.matches {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.match-row {
+    background: white;
+    border-radius: 10px;
+    padding: 18px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.match-time {
+    font-weight: bold;
+    color: #27a96a;
+}
+
+.match-teams {
+    font-weight: bold;
+}
+
+
+/* TABLE */
+
+.table-wrapper {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background: #101820;
+    color: white;
+}
+
+tr:hover {
+    background: #f7f7f7;
+}
+
+
+/* SEARCH */
+
+.search-section {
+    background: #101820;
+    color: white;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.search-section p {
+    color: #bbb;
+}
+
+.search-box {
+    max-width: 600px;
+    margin: 25px auto;
+    display: flex;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 8px 0 0 8px;
+    font-size: 16px;
+}
+
+.search-box button {
+    padding: 0 25px;
+    border: none;
+    background: #27d17f;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 0 8px 8px 0;
+}
+
+#searchResult {
+    margin-top: 15px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #080d11;
+    color: white;
+    padding: 35px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    color: #aaa;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background: #101820;
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero-ball {
+        font-size: 100px;
+        margin-top: 30px;
+    }
+
+    .results-grid,
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .match-row {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .search-box {
+        width: 95%;
+    }
+}
