@@ -1,1 +1,431 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>اخبار فوتبال</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-content">
+
+        <div class="logo">
+            ⚽ فوتبال نیوز
+        </div>
+
+        <nav class="nav">
+            <a href="#home">خانه</a>
+            <a href="#results">نتایج</a>
+            <a href="#news">اخبار</a>
+            <a href="#matches">بازی‌ها</a>
+            <a href="#table">جدول</a>
+        </nav>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    </div>
+</header>
+
+
+<section class="hero" id="home">
+    <div class="container hero-content">
+
+        <div class="hero-text">
+
+            <span class="badge">آخرین اخبار فوتبال</span>
+
+            <h1>
+                دنیای فوتبال را با ما دنبال کنید
+            </h1>
+
+            <p>
+                جدیدترین اخبار، نتایج بازی‌ها، جدول لیگ و اخبار مهم فوتبال
+            </p>
+
+            <button class="hero-btn" onclick="scrollToNews()">
+                مشاهده اخبار
+            </button>
+
+        </div>
+
+        <div class="hero-ball">
+            ⚽
+        </div>
+
+    </div>
+</section>
+
+
+<section class="section" id="results">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>آخرین نتایج</h2>
+            <span>نتایج جدیدترین مسابقات</span>
+        </div>
+
+        <div class="results-grid">
+
+            <div class="result-card">
+
+                <div class="league">
+                    لیگ برتر
+                </div>
+
+                <div class="teams">
+
+                    <div class="team">
+                        <span class="team-icon">🔴</span>
+                        پرسپولیس
+                    </div>
+
+                    <div class="score">
+                        2 - 1
+                    </div>
+
+                    <div class="team">
+                        <span class="team-icon">🔵</span>
+                        استقلال
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="result-card">
+
+                <div class="league">
+                    لیگ قهرمانان اروپا
+                </div>
+
+                <div class="teams">
+
+                    <div class="team">
+                        <span class="team-icon">⚪</span>
+                        رئال مادرید
+                    </div>
+
+                    <div class="score">
+                        3 - 2
+                    </div>
+
+                    <div class="team">
+                        <span class="team-icon">🔴</span>
+                        بارسلونا
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="result-card">
+
+                <div class="league">
+                    لیگ برتر انگلیس
+                </div>
+
+                <div class="teams">
+
+                    <div class="team">
+                        <span class="team-icon">🔴</span>
+                        لیورپول
+                    </div>
+
+                    <div class="score">
+                        2 - 0
+                    </div>
+
+                    <div class="team">
+                        <span class="team-icon">🔵</span>
+                        چلسی
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section gray" id="news">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>آخرین اخبار</h2>
+            <span>مهم‌ترین اخبار فوتبال</span>
+        </div>
+
+
+        <div class="news-grid">
+
+            <article class="news-card">
+
+                <div class="news-image">
+                    ⚽
+                </div>
+
+                <div class="news-content">
+
+                    <h3>
+                        جدیدترین اخبار فوتبال ایران
+                    </h3>
+
+                    <p>
+                        آخرین اخبار و اتفاقات فوتبال ایران را در این بخش دنبال کنید.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="news-card">
+
+                <div class="news-image">
+                    🏆
+                </div>
+
+                <div class="news-content">
+
+                    <h3>
+                        رقابت تیم‌های بزرگ اروپا
+                    </h3>
+
+                    <p>
+                        مهم‌ترین اتفاقات فوتبال اروپا و مسابقات جذاب تیم‌های بزرگ.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="news-card">
+
+                <div class="news-image">
+                    🔥
+                </div>
+
+                <div class="news-content">
+
+                    <h3>
+                        نقل و انتقالات فوتبال
+                    </h3>
+
+                    <p>
+                        جدیدترین اخبار نقل و انتقالات و جابه‌جایی بازیکنان.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section" id="matches">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>بازی‌های امروز</h2>
+            <span>برنامه مسابقات</span>
+        </div>
+
+
+        <div class="matches">
+
+            <div class="match-row">
+
+                <span class="match-time">
+                    18:30
+                </span>
+
+                <span class="match-teams">
+                    استقلال - سپاهان
+                </span>
+
+                <span>
+                    لیگ برتر
+                </span>
+
+            </div>
+
+
+            <div class="match-row">
+
+                <span class="match-time">
+                    21:00
+                </span>
+
+                <span class="match-teams">
+                    رئال مادرید - بارسلونا
+                </span>
+
+                <span>
+                    لالیگا
+                </span>
+
+            </div>
+
+
+            <div class="match-row">
+
+                <span class="match-time">
+                    23:30
+                </span>
+
+                <span class="match-teams">
+                    لیورپول - منچسترسیتی
+                </span>
+
+                <span>
+                    لیگ برتر انگلیس
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section gray" id="table">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>جدول لیگ</h2>
+            <span>جدول نمونه</span>
+        </div>
+
+
+        <div class="table-wrapper">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>رتبه</th>
+                        <th>تیم</th>
+                        <th>بازی</th>
+                        <th>امتیاز</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>پرسپولیس</td>
+                        <td>10</td>
+                        <td>25</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>استقلال</td>
+                        <td>10</td>
+                        <td>23</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>سپاهان</td>
+                        <td>10</td>
+                        <td>21</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>تراکتور</td>
+                        <td>10</td>
+                        <td>19</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="search-section">
+
+    <div class="container">
+
+        <h2>
+            جستجوی اخبار
+        </h2>
+
+        <p>
+            نام تیم یا موضوع مورد نظر خود را جستجو کنید
+        </p>
+
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="مثلاً پرسپولیس..."
+            >
+
+            <button onclick="searchNews()">
+                جستجو
+            </button>
+
+        </div>
+
+
+        <div id="searchResult"></div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="container footer-content">
+
+        <div class="logo">
+            ⚽ فوتبال نیوز
+        </div>
+
+        <p>
+            تمامی اخبار فوتبال در یکجا
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+  </html>
